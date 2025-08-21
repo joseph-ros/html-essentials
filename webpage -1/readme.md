@@ -1,0 +1,1 @@
+--hdr-bg-clr: #ADD8E6;

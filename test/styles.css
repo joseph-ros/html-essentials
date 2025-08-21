@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    --teko-font: "Teko", sans-serif;
+    --bs-blue: #0d6efd;
+    --brd-clr: #dcdcdc;
+    --brd-hvr-clr: #5663c7;
+    --light-gray: #F5F5F5;
+    --sbmt-bg-clr: #242f9b;
+    --sbmt-hvr-bg-clr: #4f62c9;
+    --mn-ttl-clr: rgba(0, 0, 0, 0.6);
+    --ggl-bg-clr: #dbdffd;
+    --ggl-hvr-bg-clr: #C0C4F0;
+    --ggl-fa-clr: #101010;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-gray);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 15rem);
+    grid-template-areas: 
+    "logo logo logo mini-title mini-title mini-title"
+    "desc desc desc title title title"
+    "img img img email email email"
+    "img img img password password password"
+    "img img img submit submit submit"
+    "img img img account account account"
+    "img img img google google google"
+    "img img img sign-in sign-in sign-in"
+    ;
+    gap: 2rem 3rem;
+    align-items: center;
+    place-content: center;
+    padding: 4rem;
+}
+
+.logo {
+    grid-area: logo;
+    justify-self: center;
+}
+
+.logo img {
+    height: 6rem;
+}
+
+.description {
+    grid-area: desc;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sign-up-img {
+    grid-area: img;
+}
+
+.sign-up-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mini-title {
+    grid-area: mini-title;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--mn-ttl-clr);
+}
+
+.title {
+    grid-area: title;
+    font-size: 4rem;
+    font-family: var(--teko-font);
+    color: var(--bs-blue);
+}
+
+.email-fieldset,
+.password-fieldset {
+    border: none;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+}
+
+.email-fieldset {
+    grid-area: email;
+}
+
+.password-fieldset {
+    grid-area: password;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.6rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    border: 1px solid var(--brd-clr);
+}
+
+input[type="submit"] {
+    grid-area: submit;
+    cursor: pointer;
+    background-color: var(--sbmt-bg-clr);
+    color: var(--light-gray);
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--sbmt-hvr-bg-clr);
+}
+
+.account-option {
+    grid-area: account;
+    justify-self: center;
+    font-size: 2.2rem;
+    font-family: var(--teko-font);
+    font-weight: 700;
+}
+
+.google-sign-up {
+    grid-area: google;
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+    color: var(--sbmt-bg-clr);
+    background-color: var(--ggl-bg-clr);
+    transition: all 0.3s ease-in-out;
+}
+
+.google-sign-up:hover {
+    background-color: var(--ggl-hvr-bg-clr);
+}
+
+.fa-google {
+    color: var(--ggl-fa-clr);
+}
+
+.google-sign-up,
+.sign-in {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sign-in {
+    grid-area: sign-in;
+}
+
+.sign-in a {
+    color: var(--sbmt-bg-clr);
+}
