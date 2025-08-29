@@ -91,6 +91,6 @@
 }
 
 .contact__form input[type="submit"] {
-  background-color: rgb(68, 68, 242);
+    background-color: rgb(68, 68, 242);
     color: #fff;
 }
