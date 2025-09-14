@@ -1,1 +1,21 @@
-/*# sourceMappingURL=index.css.map */
+.sec-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.padd {
+  padding: calc(1rem + 8vh) calc(1rem + 8vw);
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.sec-link,
+input[type=submit] {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+}/*# sourceMappingURL=index.css.map */

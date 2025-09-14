@@ -1,0 +1,5 @@
+@use "../general__styles/padding.scss" as pad;
+
+.padd {
+    padding: pad.padding-d-v(mc) pad.padding-d-h(mc);
+}
