@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $colors-theme: (
     "1": hsl(216 33% 97%),
     "2": hsl(143, 61%, 65%),
@@ -6,7 +8,7 @@ $colors-theme: (
 );
 
 @function color-theme($clr-theme) {
-    @return map-get($colors-theme, $clr-theme);
+    @return map.get($colors-theme, $clr-theme);
 }
 
 $colors-type: (
@@ -19,7 +21,7 @@ $colors-type: (
 );
 
 @function color-type($clr-type) {
-    @return map-get($colors-type, $clr-type);
+    @return map.get($colors-type, $clr-type);
 }
 
 $colors-link: (
@@ -30,7 +32,7 @@ $colors-link: (
 );
 
 @function color-link($clr-link) {
-    @return map-get($colors-link, $clr-link);
+    @return map.get($colors-link, $clr-link);
 }
 
 $colors-social: (
@@ -41,5 +43,5 @@ $colors-social: (
 );
 
 @function color-social($clr-social) {
-    @return map-get($colors-social, $clr-social);
+    @return map.get($colors-social, $clr-social);
 }

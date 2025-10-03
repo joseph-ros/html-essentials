@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ascendia</title>
-    <link rel="stylesheet" href="./scss/page__styles/index.css">
+    <link rel="stylesheet" href="./scss/main.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
@@ -13,7 +13,7 @@
         <header class="header overall-layout padd">
             <nav class="header__nav">
                 <a href="#" class="header__nav--logo">
-                    <img src="./images/icon.jpg" alt="Logo" loading="lazy"/> Ascendia
+                    <img src="./images/icon.jpg" alt="Logo" loading="lazy"/><span class="header__nav--logo__span">Ascendia</span>
                 </a>
                 <div class="header__nav--hamburger">
                     <div class="line-1"></div>
@@ -39,6 +39,91 @@
                 <a href="./pricing.html" class="header__hero--tickets-link sec-link">Buy Tickets Now</a>
             </section>
         </header>
+        <section class="countdown overall-layout padd">
+            <div class="countdown__content padd">
+                <div class="countdown__content--day">
+                    <div>
+                        <p>364</p>
+                        <p>Days</p>
+                    </div>
+                    <p>:</p>
+                </div>
+                <div class="countdown__content--hour">
+                    <div>
+                        <p>23</p>
+                        <p>Hours</p>
+                    </div>
+                    <p>:</p>
+                </div>
+                <div class="countdown__content--minute">
+                    <div>
+                        <p>59</p>
+                        <p>Minutes</p>
+                    </div>
+                </div>
+        </section>
+        <section class="features overall-layout padd sec-flex">
+            <h6 class="features__mini-title sec-mini-title">Why Choose Ascendia?</h6>
+            <h2 class="features__title sec-title">Why you should travel with us</h2>
+            <p class="features__para sec-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nisi perferendis culpa quasi illum <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span></p>
+
+            <div class="features__container responsive-grid">
+                <div class="features__container--feature">
+                    <i class="fa-solid fa-circle-info features__container--feature__icon"></i>
+                    <h3 class="features__container--feature__number">01</h3>
+                    <h4 class="features__container--feature__title">Great Tour Guides</h4>
+                    <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aut animi amet.</p>
+                </div>
+
+                <div class="features__container--feature">
+                    <i class="fa-solid fa-user-group features__container--feature__icon"></i>
+                    <h3 class="features__container--feature__number">02</h3>
+                    <h4 class="features__container--feature__title">New People</h4>
+                    <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum ipsum at facilis quaerat sunt!</p>
+                </div>
+
+                <div class="features__container--feature">
+                    <i class="fa-solid fa-map-location-dot features__container--feature__icon"></i>
+                    <h3 class="features__container--feature__number">03</h3>
+                    <h4 class="features__container--feature__title">Wide Variety of Places</h4>
+                    <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum ipsum at facilis quaerat sunt!</p>
+                </div>
+
+                <div class="features__container--feature">
+                    <i class="fa-solid fa-calendar-check features__container--feature__icon"></i>
+                    <h3 class="features__container--feature__number">04</h3>
+                    <h4 class="features__container--feature__title">Book Easily</h4>
+                    <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum ipsum at facilis quaerat sunt!</p>
+                </div>
+
+                <div class="features__container--feature">
+                    <i class="fa-solid fa-people-group features__container--feature__icon"></i>
+                    <h3 class="features__container--feature__number">05</h3>
+                    <h4 class="features__container--feature__title">Networking Session</h4>
+                    <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum ipsum at facilis quaerat sunt!</p>
+                </div>
+
+                <div class="features__container--feature">
+                    <i class="fa-solid fa-face-smile features__container--feature__icon"></i>
+                    <h3 class="features__container--feature__number">06</h3>
+                    <h4 class="features__container--feature__title">Meet New Faces</h4>
+                    <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum ipsum at facilis quaerat sunt!</p>
+                </div>
+            </div>
+        </section>
+        <section class="about overall-layout padd">
+            <figure class="about__img">
+                <img loading="lazy" src="images/about/about-image.jpg" alt="Event"/>
+            </figure>
+
+            <div class="about__content">
+                <h6 class="about__content--mini-title sec-mini-title">Get Experience</h6>
+                <h2 class="about__content--title sec-title">About The Location</h2>
+                <p class="about__content--para sec-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor sit amet, consectetur adipisicing elit. Delectus, modi! <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet, consectetur adipisicing elit. Delectus,</span></p>
+                <p class="about__content--date sec-para"><span>25th</span> Dec 2023</p>
+            </div>
+        </section>
     </main>
+    <script src="./js/app.js"></script>
 </body>
 </html>

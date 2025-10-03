@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $pad-d-v: (
     "l": calc(2rem + 12vh),
     "mc": calc(1rem + 8vh),
@@ -7,7 +9,7 @@ $pad-d-v: (
 );
 
 @function padding-d-v($padd-dv) {
-    @return map-get($pad-d-v, $padd-dv);
+    @return map.get($pad-d-v, $padd-dv);
 }
 
 $pad-d-h: (
@@ -20,7 +22,7 @@ $pad-d-h: (
 );
 
 @function padding-d-h($padd-dh) {
-  @return map-get($pad-d-h, $padd-dh);
+  @return map.get($pad-d-h, $padd-dh);
 }
 $pad-st-v: (
     "xl": 4rem,
@@ -31,7 +33,7 @@ $pad-st-v: (
 );
 
 @function padding-st-v($padd-stv) {
-    @return map-get($pad-st-v, $padd-stv);
+    @return map.get($pad-st-v, $padd-stv);
 }
 
 $pad-st-h: (
@@ -42,5 +44,5 @@ $pad-st-h: (
 );
 
 @function padding-st-h($padd-sth) {
-    @return map-get($pad-st-h, $padd-sth);
+    @return map.get($pad-st-h, $padd-sth);
 }

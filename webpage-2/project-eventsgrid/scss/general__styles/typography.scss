@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
     font-size: 62.5%;
 }
@@ -12,7 +14,7 @@ $fs-d: (
 );
 
 @function font-size-d($f-s-d) {
-    @return map-get($fs-d, $f-s-d);
+    @return map.get($fs-d, $f-s-d);
 }
 
 $fs-st: (
@@ -26,7 +28,7 @@ $fs-st: (
 );
 
 @function font-size-st($f-s-st) {
-    @return map-get($fs-st, $f-s-st);
+    @return map.get($fs-st, $f-s-st);
 }
 
 $fw: (
@@ -39,5 +41,5 @@ $fw: (
 );
 
 @function font-weight($f-w) {
-    @return map-get($fw, $f-w);
+    @return map.get($fw, $f-w);
 }

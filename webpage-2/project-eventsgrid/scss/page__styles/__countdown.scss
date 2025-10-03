@@ -1,0 +1,79 @@
+@use "../general__styles/colors" as clrs;
+@use "../general__styles/padding" as pad;
+@use "../general__styles/typography" as type;
+
+.countdown {
+    background-color: clrs.color-theme("1");
+    padding-bottom: 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__content {
+        background-image: url("/images/bg.jpg");
+        background-color: clrs.color-theme("3");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1rem solid rgba(clrs.color-theme("1"), 0.3);
+        transform: translateY(-50%);
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+        padding-left: 11rem;
+        padding-right: 11rem;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
+
+        &::before {
+            left: 0;
+            background-image: url("/images/left-shape.jpg");
+            background-position: center;
+        }
+
+        &--day,
+        &--hour,
+        &--minute,
+        &--second {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            z-index: 1;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p:first-child {
+                    font-size: type.font-size-d(m);
+                    color: clrs.color-type("1");
+                    font-weight: type.font-weight(bold);
+                }
+
+                p:last-child {
+                    font-size: type.font-size-d(s);
+                    color: clrs.color-type("1");
+                    font-weight: type.font-weight(regular);
+                }
+            }
+
+            p {
+                font-size: type.font-size-d(m);
+                color: clrs.color-type("1");
+                font-weight: type.font-weight(bold);
+            }
+        }
+    }
+}
