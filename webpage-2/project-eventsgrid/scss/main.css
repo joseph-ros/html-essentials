@@ -1191,4 +1191,48 @@ input[type=submit] {
   align-self: end;
   color: hsl(0, 0%, 100%);
   font-size: 1.5rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem 2rem;
+}
+.contact__content, .contact__form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.contact__content--title, .contact__content--desc {
+  text-align: left;
+}
+.contact__content--desc {
+  margin-bottom: 0;
+  color: hsla(238, 49%, 13%, 0.5);
+}
+.contact__form fieldset {
+  display: flex;
+  gap: 1rem;
+}
+.contact__form fieldset input {
+  flex-grow: 1;
+}
+.contact__form input,
+.contact__form textarea {
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(16.575, 17.68, 49.725, 0.3);
+  font-size: 1.5rem;
+  width: 100%;
+}
+.contact__form input[type=submit] {
+  background-color: hsl(203, 100%, 78%);
+  cursor: pointer;
+  border: none;
+}
+.contact__form input[type=submit]:hover {
+  background-color: hsl(143, 61%, 65%);
+}
+.contact__form textarea {
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=main.css.map */
