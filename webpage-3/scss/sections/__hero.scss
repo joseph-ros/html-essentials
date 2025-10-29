@@ -3,7 +3,8 @@
 
 .hero {
     background-image: url("../images/hero-bg.jpg");
-
+    background-attachment: fixed;
+    
     &__content {
         display: flex;
         flex-direction: column;

@@ -1,0 +1,66 @@
+@use "../general-styles/__colors" as clr;
+@use "../general-styles/__typography" as type;
+
+.about {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        &--title {
+            span {
+                color: clr.clrs(clr-primary);
+            }
+        }
+
+        &--trainer {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                &--mini-title {
+                    background-color: clr.clrs(clr-primary);
+                    color: clr.clrs(clr-white);
+                    font-size: type.fs(m);
+                    align-self: flex-start;
+                    padding: 0 2rem;
+                }
+
+                &--role,
+                &--expertise {
+                    font-size: type.fs(m);
+                    font-weight: type.fw(regular);
+                }
+
+                &--expertise {
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 5px;
+                        left: 0;
+                        width: 5rem;
+                        height: 5px;
+                        background-color: clr.clrs(clr-primary);
+                        z-index: -1;
+                    }
+                }
+
+                &--social {
+                    display: flex;
+                    gap: 1rem;
+
+                    i {
+                        font-size: type.fs(m);
+                    }
+                }
+            }
+        }
+    }
+}

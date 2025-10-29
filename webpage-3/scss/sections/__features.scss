@@ -7,6 +7,12 @@
         grid-template-rows: repeat(2, min-content);
         gap: 5rem;
 
+        &--title {
+            span {
+                color: clr.clrs(clr-primary);
+            }
+        }
+
         &--cards {
             display: grid;
             grid-template-rows: repeat(6, min-content);
