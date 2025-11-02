@@ -285,6 +285,7 @@ button {
   gap: 2rem;
   background-image: url("../images/trainer-card-bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
   padding-bottom: 4rem;
 }
 .trainer__content--card__title, .trainer__content--card__desc,
@@ -309,8 +310,9 @@ button {
   gap: 2rem;
 }
 .features__content--cards__card:nth-child(2n) {
-  background-image: url("../images/features-card-bg.jpg");
+  background-image: url("../images/trainer-card-bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
   color: rgb(255, 255, 255);
 }
 .features__content--cards__card {
@@ -439,6 +441,240 @@ button {
   .gallery__content--img:hover::after {
     background-color: rgba(0, 0, 0, 0.65);
   }
+}
+
+.pricing__content {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 5rem;
+  width: 100%;
+}
+.pricing__content--title {
+  text-align: left;
+}
+.pricing__content--plans {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 2rem;
+}
+.pricing__content--plans__plan {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pricing__content--plans__plan--title {
+  padding-bottom: 2rem;
+  position: relative;
+}
+.pricing__content--plans__plan--title span {
+  color: rgb(252, 84, 26);
+  display: block;
+}
+.pricing__content--plans__plan--title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 30px;
+  background-color: #d3d3d3;
+}
+.pricing__content--plans__plan--features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.pricing__content--plans__plan--features li {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.pricing__content--plans__plan--features li i {
+  color: rgb(252, 84, 26);
+  margin-top: 3px;
+}
+.pricing__content--plans__plan--link {
+  color: rgb(6, 21, 28);
+  font-size: 1.5rem;
+}
+.pricing__content--plans__plan.regular-plan {
+  border: 1px solid #d3d3d3;
+}
+.pricing__content--plans__plan.famous-plan {
+  background-color: rgb(238, 238, 238);
+}
+.pricing__content--plans__plan.expert-plan {
+  background-image: url("../images/trainer-card-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+}
+.pricing__content--plans__plan.expert-plan .pricing__content--plans__plan--link {
+  color: rgb(255, 255, 255);
+}
+
+.testimonial__content {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 5rem;
+}
+.testimonial__content--info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.testimonial__content--info__rating {
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.testimonial__content--info__rating i {
+  color: rgb(252, 84, 26);
+  font-size: 1.5rem;
+}
+.testimonial__content--info__text {
+  font-size: 2rem;
+}
+.testimonial__content--info__name {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.testimonial__content--info__program {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact {
+  background-color: rgb(238, 238, 238);
+}
+.contact__content {
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 5rem;
+}
+.contact__content--titles {
+  display: flex;
+  flex-direction: column;
+}
+.contact__content--info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact__content--info__number, .contact__content--info__address, .contact__content--info__working-hours {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.contact__content--info__number i, .contact__content--info__address i, .contact__content--info__working-hours i {
+  color: rgb(252, 84, 26);
+}
+.contact__content--info__number i,
+.contact__content--info__number span, .contact__content--info__address i,
+.contact__content--info__address span, .contact__content--info__working-hours i,
+.contact__content--info__working-hours span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contact__content--info__address > span, .contact__content--info__working-hours > span {
+  display: flex;
+  flex-direction: column;
+}
+.contact__content--form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgb(6, 21, 28);
+  padding: 2rem;
+}
+.contact__content--form input,
+.contact__content--form textarea {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 1rem;
+}
+.contact__content--form input,
+.contact__content--form select,
+.contact__content--form textarea {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  border-radius: 0;
+  width: 100%;
+}
+.contact__content--form select {
+  background-color: rgb(252, 84, 26);
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+}
+
+.footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer__content {
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+  gap: 5rem;
+}
+.footer__content--logo {
+  font-size: 7rem;
+  color: rgb(252, 84, 26);
+}
+.footer__content--programs, .footer__content--links, .footer__content--newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__content--programs__title, .footer__content--links__title, .footer__content--newsletter__title {
+  font-size: 2rem;
+}
+.footer__content--programs ul, .footer__content--links ul, .footer__content--newsletter ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.footer__content--programs ul a, .footer__content--links ul a, .footer__content--newsletter ul a {
+  color: rgb(255, 255, 255);
+}
+.footer__content--newsletter {
+  gap: 2rem;
+}
+.footer__content--newsletter fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__content--newsletter input {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-radius: 0;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+}
+.footer__content--social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer__content--social p {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+.footer__content--social div {
+  display: flex;
+  gap: 2rem;
+}
+.footer__content--social div i {
+  color: rgb(255, 255, 255);
+  transition: all 0.25s;
+}
+.footer__content--social div i:hover {
+  color: rgb(252, 84, 26);
 }
 
 @media screen and (min-width: 1400px) {
